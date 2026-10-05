@@ -1,129 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Navaris Marine Pte Ltd | Deck equipment, propellers and spare parts</title>
-<meta name="description" content="Navaris Marine supplies propellers and marine spare parts, and provides deck equipment consultancy to vessel owners and yards in Southeast Asia and India.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230E3B2E'/><circle cx='50' cy='50' r='14' fill='%23F37021'/></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Navaris Marine Pte Ltd | Propellers, deck equipment consultancy and spares</title><meta name="description" content="Navaris Marine supplies propellers and marine spare parts, and provides deck equipment consultancy and engineering support in Southeast Asia and India."><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230E3B2E'/><circle cx='50' cy='50' r='14' fill='%23F37021'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{--green:#0E3B2E;--orange:#F37021;--ink:#10201A;--mist:#EDF2EF;--line:#cfdad4;--muted:#4f625a;--white:#fff}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:"IBM Plex Sans",system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px}
-h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;line-height:1.05;margin:0}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-header{background:var(--green);color:var(--white)}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
-.brand{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:.02em;text-decoration:none}
-.brand span{color:var(--orange)}
-nav a.link{text-decoration:none;margin-left:24px;font-size:.95rem}
-nav a.link:hover{color:var(--orange)}
-.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;padding:56px 0 88px}
-.hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem);font-weight:700;max-width:14ch}
-.hero p{max-width:46ch;font-size:1.15rem;color:#cfe0d8;margin:24px 0 32px}
-.btn{display:inline-block;background:var(--orange);color:var(--white);padding:14px 26px;border-radius:4px;text-decoration:none;font-weight:500}
-.btn:hover{background:#d85f14}
-.prop{width:100%;max-width:340px;justify-self:center}
-.prop .blades{transform-origin:100px 100px;animation:spin 40s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-@media (prefers-reduced-motion:reduce){.prop .blades{animation:none}}
-section{padding:72px 0}
-h2{font-size:clamp(2rem,4vw,2.8rem);font-weight:700;color:var(--green);margin-bottom:12px}
-.lead{max-width:56ch;color:var(--muted);margin:0 0 40px}
-.rows{border-top:2px solid var(--green)}
-.row{display:grid;grid-template-columns:1fr 1.6fr;gap:32px;padding:28px 0;border-bottom:1px solid var(--line)}
-.row h3{font-size:1.7rem;font-weight:600;color:var(--green)}
-.row p{margin:0;color:var(--ink)}
-.band{background:var(--mist)}
-.areas{display:flex;flex-wrap:wrap;gap:12px;margin:0;padding:0;list-style:none}
-.areas li{border:1px solid var(--green);color:var(--green);padding:8px 16px;border-radius:999px;font-weight:500}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-.contact dl{margin:0}
-.contact dt{font-weight:500;color:var(--muted);font-size:.9rem;margin-top:18px}
-.contact dd{margin:2px 0 0;font-size:1.15rem}
-.contact a{color:var(--green);font-weight:500}
-footer{background:var(--green);color:#b9d0c6;padding:28px 0;font-size:.9rem}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-@media (max-width:760px){
- .hero{grid-template-columns:1fr;padding-bottom:56px}
- .prop{max-width:200px;justify-self:start}
- .row,.contact{grid-template-columns:1fr;gap:10px}
- nav a.link{display:none}
-}
-</style>
-</head>
-<body>
-<header>
- <div class="wrap">
-  <nav aria-label="Main">
-   <a class="brand" href="#top">Navaris<span>.</span>Marine</a>
-   <div><a class="link" href="#services">What we do</a><a class="link" href="#coverage">Where we work</a><a class="link" href="#contact">Contact</a></div>
-  </nav>
-  <div class="hero" id="top">
-   <div>
-    <h1>Trusted Intelligence at Sea</h1>
-    <p>Propellers, spare parts and deck equipment advice for vessel owners, operators and yards in Southeast Asia and India.</p>
-    <a class="btn" href="#contact">Send us an enquiry</a>
-   </div>
-   <svg class="prop" viewBox="0 0 200 200" role="img" aria-label="Ship propeller illustration">
-    <g class="blades" fill="#F37021">
-     <ellipse cx="100" cy="52" rx="19" ry="42"/>
-     <ellipse cx="100" cy="52" rx="19" ry="42" transform="rotate(72 100 100)"/>
-     <ellipse cx="100" cy="52" rx="19" ry="42" transform="rotate(144 100 100)"/>
-     <ellipse cx="100" cy="52" rx="19" ry="42" transform="rotate(216 100 100)"/>
-     <ellipse cx="100" cy="52" rx="19" ry="42" transform="rotate(288 100 100)"/>
-    </g>
-    <circle cx="100" cy="100" r="22" fill="#0E3B2E" stroke="#fff" stroke-width="4"/>
-   </svg>
-  </div>
- </div>
-</header>
-
-<main>
- <section id="services">
-  <div class="wrap">
-   <h2>What we do</h2>
-   <p class="lead">Three services, one point of contact. Tell us the vessel and the part, and we come back with a clear quotation.</p>
-   <div class="rows">
-    <div class="row"><h3>Deck equipment consultancy</h3><p>Independent technical advice on winches, cranes, windlasses and other deck machinery: selection, troubleshooting, upgrades and repair scoping.</p></div>
-    <div class="row"><h3>Propeller supply</h3><p>New and replacement propellers sourced to your vessel's specification, with technical clarification before you order.</p></div>
-    <div class="row"><h3>Spare parts trading</h3><p>Marine spare parts for main and auxiliary equipment, sourced from OEMs and trusted suppliers, with documents ready for class and customs.</p></div>
-   </div>
-  </div>
- </section>
-
- <section class="band" id="coverage">
-  <div class="wrap">
-   <h2>Where we work</h2>
-   <p class="lead">Based in Singapore, serving customers across the region.</p>
-   <ul class="areas"><li>Singapore</li><li>Malaysia</li><li>Indonesia</li><li>Vietnam</li><li>Thailand</li><li>India</li></ul>
-  </div>
- </section>
-
- <section id="contact">
-  <div class="wrap contact">
-   <div>
-    <h2>Get a quotation</h2>
-    <p class="lead" style="margin-bottom:0">Email the vessel name, the equipment make and model, and the part or service you need. We reply within one working day.</p>
-   </div>
-   <dl>
-    <dt>Email</dt><dd><a href="mailto:Harold@navaris-marine.com">Harold@navaris-marine.com</a></dd>
-    <dt>Mobile</dt><dd><a href="tel:+6594301343">+65 9430 1343</a></dd>
-    <dt>Company</dt><dd>Navaris Marine Pte Ltd, Singapore</dd>
-   </dl>
-  </div>
- </section>
-</main>
-
-<footer>
- <div class="wrap"><span>&copy; <span id="y">2026</span> Navaris Marine Pte Ltd</span><span>Trusted Intelligence at Sea</span></div>
-</footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
-</html>
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="site"><div class="wrap bar"><a class="brand" href="index.html">Navaris<i>.</i>Marine</a>
+<button class="burger" aria-expanded="false" aria-label="Menu">Menu</button><nav class="main" aria-label="Main"><a href="index.html" class="on" aria-current="page">Home</a><a href="about.html">About us</a><a href="propellers.html">Propellers</a><a href="consultancy.html">Consultancy</a><a href="engineering.html">Engineering works</a><a href="spares.html">Spares trading</a><a class="cta" href="contact.html">Contact us</a></nav></div></header>
+<div class="hero"><div class="wrap"><div><h1>Trusted Intelligence at Sea</h1>
+<p>Propellers, spare parts, deck equipment consultancy and engineering support for vessel owners, operators and yards in Southeast Asia and India.</p>
+<a class="btn" href="contact.html">Request a quotation</a><a class="btn alt" href="about.html">About Navaris</a></div>
+<svg class="sonar" viewBox="-40 -40 280 280" role="img" aria-label="Ship propeller illustration"><circle cx="100" cy="100" r="104" fill="none" stroke="#fff" stroke-opacity=".14"/><circle cx="100" cy="100" r="122" fill="none" stroke="#fff" stroke-opacity=".14"/><circle cx="100" cy="100" r="140" fill="none" stroke="#fff" stroke-opacity=".14"/><g class="bl" fill="#F37021"><ellipse cx="100" cy="52" rx="19" ry="42"/><ellipse cx="100" cy="52" rx="19" ry="42" transform="rotate(72 100 100)"/><ellipse cx="100" cy="52" rx="19" ry="42" transform="rotate(144 100 100)"/><ellipse cx="100" cy="52" rx="19" ry="42" transform="rotate(216 100 100)"/><ellipse cx="100" cy="52" rx="19" ry="42" transform="rotate(288 100 100)"/></g><circle cx="100" cy="100" r="22" fill="#0E3B2E" stroke="#fff" stroke-width="4"/></svg></div></div><section><div class="wrap"><h2>What we do</h2><p class="lead">Equipment, parts and technical advice for vessel owners, operators, shipyards and ship managers.</p><div class="rows"><div class="row"><h3>Propellers</h3><p>New and replacement propellers supplied to your vessel's specification, with technical clarification before you order.</p><a class="go" href="propellers.html">Learn more</a></div><div class="row"><h3>Deck equipment consultancy</h3><p>Independent advice on winches, windlasses, cranes and other deck machinery: selection, troubleshooting and upgrades.</p><a class="go" href="consultancy.html">Learn more</a></div><div class="row"><h3>Basic engineering works</h3><p>Coordination of minor repairs, installation support and modifications through qualified workshops and service engineers.</p><a class="go" href="engineering.html">Learn more</a></div><div class="row"><h3>Spares trading</h3><p>Marine spare parts quoted against your part number or drawing, with origin, lead time and documents stated up front.</p><a class="go" href="spares.html">Learn more</a></div></div></div></section>
+<section class="band"><div class="wrap"><h2>How an enquiry works</h2><p class="lead">Short, written and easy to follow.</p><div class="steps">
+<div><b>1</b><h3>Send the details</h3><p>Vessel, equipment make and model, part number or drawing, quantity and delivery port.</p></div>
+<div><b>2</b><h3>We quote in writing</h3><p>An engineer reviews your request, asks questions where needed and sends a clear quotation.</p></div>
+<div><b>3</b><h3>We supply and follow up</h3><p>We arrange supply or service, keep you updated, and provide delivery documents.</p></div></div></div></section>
+<section><div class="wrap"><h2>Why Navaris</h2><p class="lead">A small team that answers properly.</p><div class="why">
+<div><h3>Engineer-led</h3><p>Every enquiry is read by an engineer, so we ask the right technical questions before we quote.</p></div>
+<div><h3>Clear paperwork</h3><p>Quotations, delivery notes and receipts that are complete and consistent for your purchasing and class needs.</p></div>
+<div><h3>Regional focus</h3><p>Based in Singapore and serving customers across Southeast Asia and India.</p></div></div></div></section><section class="band"><div class="wrap"><h2>Ready to send an enquiry?</h2><p class="lead">Tell us what you need and we will reply with a clear written quotation.</p><a class="btn" href="contact.html">Contact us</a></div></section>
+<footer><div class="wrap"><div class="fg"><div><h3>Navaris Marine Pte Ltd</h3><p>Trusted Intelligence at Sea</p><p>Propellers, deck equipment consultancy, engineering works and spare parts for Southeast Asia and India.</p></div>
+<div><h3>Pages</h3><p><a href="about.html">About us</a></p><p><a href="propellers.html">Propellers</a></p><p><a href="consultancy.html">Consultancy</a></p><p><a href="engineering.html">Engineering works</a></p><p><a href="spares.html">Spares trading</a></p></div><div><h3>Contact</h3><p><a href="mailto:harold@navaris-marine.com">Harold@navaris-marine.com</a></p><p><a href="tel:+6594301343">+65 9430 1343</a></p><p>Singapore</p></div></div>
+<div class="copy">&copy; <span id="y">2026</span> Navaris Marine Pte Ltd. All rights reserved.</div></div></footer><script src="script.js"></script></body></html>
