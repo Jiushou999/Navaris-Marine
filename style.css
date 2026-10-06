@@ -46,3 +46,10 @@ footer p{margin:0 0 6px}.copy{border-top:1px solid rgba(255,255,255,.18);margin-
 @media(max-width:820px){.burger{display:block}.main{display:none;position:absolute;left:0;right:0;top:72px;background:#fff;padding:12px 24px 20px;border-bottom:1px solid var(--line)}
 .main.open{display:block}.main a{display:block;margin:0;padding:12px 0}.main a.cta{display:inline-block;margin-top:8px}
 .hero .wrap,.cols,.row,.steps,.why,.fg,.two{grid-template-columns:1fr}.sonar{max-width:230px;justify-self:start}.box{position:static}.btn.alt{margin:12px 0 0}}
+
+.dark{background:var(--green);color:#fff}.dark h2{color:#fff}.dark .lead{color:#cfe0d8}
+.fleet{display:grid;grid-template-columns:repeat(5,1fr);gap:28px}.fleet figure{margin:0}.fleet svg{width:100%;height:auto;color:#cfe0d8}
+.fleet figcaption{border-top:1px solid rgba(255,255,255,.25);padding-top:10px;margin-top:8px;font-size:.92rem;color:#cfe0d8}
+.fleet b{display:block;color:#fff;font:700 1.4rem "Barlow Condensed",sans-serif}
+.gear{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:52px}.gear div{display:flex;gap:14px;align-items:center}.gear svg{width:46px;height:46px;color:var(--orange);flex:none}
+@media(max-width:820px){.fleet,.gear{grid-template-columns:repeat(2,1fr)}}
