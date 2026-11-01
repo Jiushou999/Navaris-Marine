@@ -74,3 +74,9 @@ footer p{margin:0 0 6px}.copy{border-top:1px solid rgba(255,255,255,.18);margin-
 .draws{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 40px;max-width:760px}.draws img{display:block;width:100%;aspect-ratio:4/5;object-fit:contain;background:#fff;border:1px solid var(--line)}.draws figcaption{border-top:2px solid var(--green);margin-top:10px;padding-top:10px;font-size:.95rem;color:var(--muted)}.draws figure{margin:0}@media(max-width:700px){.draws{grid-template-columns:1fr}}
 
 .flogo{height:56px}.ftag{font:700 1.4rem "Barlow Condensed",sans-serif;color:#fff;margin:0 0 10px}
+
+.why.four{grid-template-columns:repeat(4,1fr);gap:28px}.why.four h3{font-size:1.4rem}.dark .why h3{color:#fff}.dark .why p{color:#cfe0d8}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:3px solid var(--orange)}.flow div{padding:18px 18px 0 0}.flow b{font:700 1.6rem "Barlow Condensed",sans-serif;color:var(--green);display:block}.flow p{margin:4px 0 0;font-size:.95rem;color:var(--muted)}
+@media(max-width:900px){.why.four{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr 1fr}}@media(max-width:600px){.why.four,.flow{grid-template-columns:1fr}}
+
+section .cols{padding:0 24px}section .cols.eq{grid-template-columns:1fr 1fr}.cols h2:first-child{margin-top:0}@media(max-width:900px){section .cols.eq{grid-template-columns:1fr}}
